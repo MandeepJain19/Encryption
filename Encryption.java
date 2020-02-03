@@ -25,7 +25,8 @@ class Enc
     };
     public void showData()
     {
-        System.out.println(str);
+        System.out.print("\t Your Entered Data is : "+str);
+        System.out.print("\t Encrypted Data is :");
     }
     public void arr()
     {
@@ -36,10 +37,10 @@ class Enc
         int ascii=ch;
         ascii+=5;
        bin= Integer.toBinaryString(ascii);
-        System.out.print(ch+"\t");
-        System.out.print(ascii+"\t");
-        System.out.print(bin+"\t");
-        System.out.println();
+//        System.out.print(ch+"\t");
+//        System.out.print(ascii+"\t");
+        System.out.print("\t"+bin);
+
 
         try{
             FileWriter fw = new FileWriter("D:/JavaExe/text.txt",true);
@@ -50,7 +51,7 @@ class Enc
             e.printStackTrace();
         }
 
-    }
+    }JOptionPane.showMessageDialog(null,"Data Encrypted and Saved");
 
 
 //    for(int i=0;i<c.lenght;i++)
